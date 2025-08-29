@@ -13,6 +13,9 @@ let students = [
   { id: 2, name: "Bob", age: 22, course: "Mathematics" }
 ];
 //
+app.get("/four", (req, res) => {
+ res.send("updation Completed")
+});
 app.get("/one", (req, res) => {
  res.send("updation Completed")
 });
