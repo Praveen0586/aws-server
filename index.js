@@ -13,6 +13,10 @@ let students = [
   { id: 2, name: "Bob", age: 22, course: "Mathematics" }
 ];
 
+
+app.get("/another", (req, res) => {
+ res.send("updation Completed")
+});
 // GET all students
 app.get("/students", (req, res) => {
   res.json(students);
