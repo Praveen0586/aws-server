@@ -17,7 +17,7 @@ let students = [
 app.get("/students", (req, res) => {
   res.json(students);
 });
-
+app.get("/hello",(req,res)=>{res.send("Hello User")});
 // GET a student by ID
 app.get("/students/:id", (req, res) => {
   const studentId = parseInt(req.params.id);
