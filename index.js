@@ -7,6 +7,8 @@ const PORT = 3000;
 // Middleware to parse JSON body
 app.use(express.json());
 
+
+
 // In-memory "student database"
 let students = [
   { id: 1, name: "Alice", age: 21, course: "Computer Science" },
