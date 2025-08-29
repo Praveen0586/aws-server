@@ -19,6 +19,9 @@ app.get("/one", (req, res) => {
 app.get("/two", (req, res) => {
  res.send("updation Completed")
 });
+app.get("/three", (req, res) => {
+ res.send("updation Completed")
+});
 
 app.get("/another", (req, res) => {
  res.send("updation Completed")
