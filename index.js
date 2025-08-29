@@ -12,7 +12,10 @@ let students = [
   { id: 1, name: "Alice", age: 21, course: "Computer Science" },
   { id: 2, name: "Bob", age: 22, course: "Mathematics" }
 ];
-
+//
+app.get("/one", (req, res) => {
+ res.send("updation Completed")
+});
 
 app.get("/another", (req, res) => {
  res.send("updation Completed")
