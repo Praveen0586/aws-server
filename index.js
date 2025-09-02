@@ -6,6 +6,7 @@ const PORT = 3000;
 
 // Middleware to parse JSON body
 // edited
+//
 app.use(express.json());
 
 // In-memory "student database"
@@ -13,6 +14,10 @@ let students = [
   { id: 1, name: "Alice", age: 21, course: "Computer Science" },
   { id: 2, name: "Bob", age: 22, course: "Mathematics" }
 ];
+// GET all students
+app.get("/getall", (req, res) => {
+  res.json(students);
+});
 
 // GET all students
 app.get("/students", (req, res) => {
